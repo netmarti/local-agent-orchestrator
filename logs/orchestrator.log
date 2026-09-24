@@ -1,3 +1,20 @@
 2026-09-24 01:35:09,929 - __main__ - INFO - ✅ Configuración cargada desde config/config.yaml
 2026-09-24 01:35:09,929 - __main__ - INFO - 🚀 Inicializando Local Agent Orchestrator...
 2026-09-24 01:35:09,929 - __main__ - ERROR - 💥 Error fatal: 'NoneType' object has no attribute 'get'
+2026-09-24 01:43:48,671 - __main__ - INFO - ✅ Configuración cargada desde config/config.yaml
+2026-09-24 01:43:48,671 - __main__ - INFO - 🚀 Inicializando Local Agent Orchestrator...
+2026-09-24 01:43:48,671 - __main__ - INFO - 🤖 Iniciando agente: web_researcher
+2026-09-24 01:43:48,671 - __main__ - INFO - 🤖 Iniciando agente: code_analyzer
+2026-09-24 01:43:48,671 - __main__ - INFO - 🤖 Iniciando agente: text_summarizer
+2026-09-24 01:43:48,671 - __main__ - INFO - 🤖 Iniciando agente: document_reader
+2026-09-24 01:43:48,672 - __main__ - INFO - ✨ 4 agentes activos listos para trabajar.
+2026-09-24 01:43:48,672 - __main__ - INFO - 🎬 Ejecutando demostración...
+2026-09-24 01:43:48,672 - __main__ - INFO - 📋 Tarea recibida: 'Analiza este código Python y encuentra errores'
+2026-09-24 01:43:48,672 - __main__ - INFO - 🎯 Tarea asignada a: web_researcher
+2026-09-24 01:43:48,672 - __main__ - INFO - 📋 Tarea recibida: 'Resume el artículo sobre IA local'
+2026-09-24 01:43:48,672 - __main__ - INFO - 🎯 Tarea asignada a: web_researcher
+2026-09-24 01:43:48,672 - __main__ - INFO - 📋 Tarea recibida: 'Busca información sobre Ollama en internet'
+2026-09-24 01:43:48,673 - __main__ - INFO - 🎯 Tarea asignada a: web_researcher
+2026-09-24 01:43:48,673 - __main__ - INFO - 📋 Tarea recibida: 'Extrae texto de este PDF'
+2026-09-24 01:43:48,673 - __main__ - INFO - 🎯 Tarea asignada a: web_researcher
+2026-09-24 01:43:48,673 - __main__ - INFO - 🏁 Demostración completada.
