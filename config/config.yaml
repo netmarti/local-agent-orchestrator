@@ -1,0 +1,50 @@
+# Configuración del Local Agent Orchestrator
+# Define modelos, agentes y parámetros de ejecución
+
+# --- Configuración del Modelo Principal ---
+model:
+  provider: "ollama"  # Soporta: ollama, vllm, llama-cpp
+  model_name: "llama3"  # Cambia a "mistral", "gemma", etc.
+  temperature: 0.7
+  max_tokens: 2048
+  timeout: 120
+
+# --- Configuración de Agentes Especializados ---
+agents:
+  web_researcher:
+    enabled: true
+    description: "Investiga información en internet usando herramientas de búsqueda"
+    model_override: null  # Usa el modelo principal si es null
+    
+  code_analyzer:
+    enabled: true
+    description: "Analiza y explica fragmentos de código, detecta errores"
+    specialties: ["python", "typescript", "javascript"]
+    
+  text_summarizer:
+    enabled: true
+    description: "Resume textos largos manteniendo los puntos clave"
+    max_summary_length: 500
+    
+  document_reader:
+    enabled: true
+    description: "Extrae y procesa texto de PDFs, DOCX y otros formatos"
+    supported_formats: ["pdf", "docx", "txt", "md"]
+
+# --- Configuración del Orquestador ---
+orchestrator:
+  strategy: "dynamic"  # Opciones: dynamic, round_robin, priority
+  max_concurrent_tasks: 4
+  retry_attempts: 2
+  timeout_per_task: 300  # Segundos
+  
+# --- Logs y Depuración ---
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "logs/orchestrator.log"
+  console: true
+
+# --- Recursos del Sistema ---
+resources:
+  max_memory_mb: 4096
+  cpu_threads: 4

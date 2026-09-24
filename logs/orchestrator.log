@@ -1,0 +1,3 @@
+2026-09-24 01:35:09,929 - __main__ - INFO - ✅ Configuración cargada desde config/config.yaml
+2026-09-24 01:35:09,929 - __main__ - INFO - 🚀 Inicializando Local Agent Orchestrator...
+2026-09-24 01:35:09,929 - __main__ - ERROR - 💥 Error fatal: 'NoneType' object has no attribute 'get'
